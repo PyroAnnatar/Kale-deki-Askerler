@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
 export default function Button({ stateProps }) {
   return (
-    <div className='button-container'>
+    <div className="button-container">
       <button
         onClick={() => stateProps.setGameRunning(!stateProps.gameRunning)}
       >
-        {stateProps.gameRunning ? 'Oynat' : 'Duraklat'}
+        {stateProps.gameRunning ? "Duraklat" : "Oynat"}
       </button>
     </div>
-  )
+  );
 }
